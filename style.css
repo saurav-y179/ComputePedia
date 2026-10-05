@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("gpt.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+
+.content {
+    width: 1200px;
+    margin: auto;
+    padding-top: 150px;
+    font-family: sans-serif;
+}
+
+.content h1 {
+    color: white;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.content span {
+    color: #00bfff;
+}
+
+.content p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    width: 550px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+
+    padding: 12px 24px;
+    margin-right: 15px;
+
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    background: white;
+    color: black;
+}
+
+.architectures {
+    width: 1200px;
+    margin: auto;
+    padding-top: 120px;
+
+    color: white;
+    font-family: sans-serif;
+}
+
+.architectures h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.architecture-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.architecture-box {
+    width: 33%;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.architecture-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.architecture-box p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.architecture-box a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.architecture-box a:hover {
+    color: white;
+}
+
+
+.architecture-page {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 24px 0;
+
+    color: white;
+    font-family: sans-serif;
+}
+
+.architecture-page h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.architecture-page p {
+    width: 800px;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.architecture-page h2 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+
+.cpu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+    padding-bottom: 80px;
+}
+
+.cpu-card {
+    background: rgba(0, 0, 0, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+
+    overflow: hidden;
+    padding-bottom: 18px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.cpu-card:hover {
+    transform: translateY(-6px);
+    background: rgba(0, 0, 0, 0.6);
+    border-color: #00bfff;
+}
+
+.cpu-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.cpu-card:hover img {
+    transform: scale(1.06);
+}
+
+.cpu-card h3 {
+    font-size: 20px;
+    color: white;
+    margin: 16px 18px 12px;
+}
+
+.cpu-card p {
+    width: auto;
+    max-width: none;
+    margin: 6px 18px;
+
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+.about-content {
+    width: 1200px;
+    margin: auto;
+    padding-top: 120px;
+
+    color: white;
+    font-family: sans-serif;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    width: 800px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
