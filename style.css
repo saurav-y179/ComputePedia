@@ -204,7 +204,7 @@ body {
 }
 
 .architecture-page h1 {
-    font-family: var(--font-display);
+    font-family: var(--font-hero);
     font-size: clamp(32px, 5vw, 50px);
     font-weight: 700;
     letter-spacing: 0;
