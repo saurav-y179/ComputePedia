@@ -39,11 +39,23 @@
             <p>
                 x86 is a processor architecture widely used in personal
                 computers, laptops, workstations, and servers. x86-64 is
-                the 64-bit extension of the architecture and is used by
-                modern processors from companies such as Intel and AMD.
+                the 64-bit extension used by modern processors from Intel
+                and AMD. Its long history gives it broad software
+                compatibility, while current chips combine high clock
+                speeds, multiple cores, and specialized features for
+                gaming, creative work, and data centers.
             </p>
 
             <h2>Processors</h2>
+
+            <input class="company-filter-input" type="radio" name="x86-company" id="x86-all" checked>
+            <input class="company-filter-input" type="radio" name="x86-company" id="x86-intel">
+            <input class="company-filter-input" type="radio" name="x86-company" id="x86-amd">
+            <div class="company-filters" aria-label="Filter x86 processors by company">
+                <label for="x86-all">All companies</label>
+                <label for="x86-intel">Intel</label>
+                <label for="x86-amd">AMD</label>
+            </div>
 
             <div class="cpu-grid">
 
@@ -52,7 +64,7 @@
                         <img src="assets/thumbs/intel-penryn.thumb.jpg" alt="Intel Core 2 Extreme QX9770 die shot" loading="lazy">
                     </a>
                     <h3>Intel Core 2 Extreme QX9770</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 45nm</p>
                     <p>1-4 Cores / 1-4 Threads</p>
                 </div>
@@ -62,7 +74,7 @@
                         <img src="assets/thumbs/intel-haswell.thumb.jpg" alt="Intel Xeon E5-2680 v3 die shot" loading="lazy">
                     </a>
                     <h3>Intel Xeon E5-2680 v3</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 22nm</p>
                     <p>12 Cores / 24 Threads</p>
                 </div>
@@ -72,7 +84,7 @@
                         <img src="assets/thumbs/intel-skylake.thumb.jpg" alt="Intel E3-1585 v5 die shot" loading="lazy">
                     </a>
                     <h3>Intel E3-1585 v5</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 14nm</p>
                     <p>4 Cores / 8 Threads</p>
                 </div>
@@ -82,7 +94,7 @@
                         <img src="assets/thumbs/intel-knights-landing.thumb.jpg" alt="Intel Xeon Phi 7290 die shot" loading="lazy">
                     </a>
                     <h3>Intel Xeon Phi 7290</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 14nm</p>
                     <p>64-72 Cores / 256-288 Threads</p>
                 </div>
@@ -92,7 +104,7 @@
                         <img src="assets/thumbs/intel-tiger-lake.thumb.jpg" alt="Intel Core i9-11980HK die shot" loading="lazy">
                     </a>
                     <h3>Intel Core i9-11980HK</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 10nm</p>
                     <p>8 Cores / 16 Threads</p>
                 </div>
@@ -102,7 +114,7 @@
                         <img src="assets/thumbs/intel-alder-lake-s.thumb.jpg" alt="Intel Core i9-12900K die shot" loading="lazy">
                     </a>
                     <h3>Intel Core i9-12900K</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 7</p>
                     <p>16 Cores / 24 Threads</p>
                 </div>
@@ -112,7 +124,7 @@
                         <img src="assets/thumbs/intel-sapphire-rapids.thumb.jpg" alt="Intel Xeon Platinum 8480+ die shot" loading="lazy">
                     </a>
                     <h3>Intel Xeon Platinum 8480+</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 7</p>
                     <p>15 Cores / 30 Threads</p>
                 </div>
@@ -122,7 +134,7 @@
                         <img src="assets/thumbs/intel-meteor-lake.thumb.jpg" alt="Intel Core Ultra 9 185H die shot" loading="lazy">
                     </a>
                     <h3>Intel Core Ultra 9 185H</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>Intel 4 / TSMC N5/6</p>
                     <p>12-16 Cores / 14-22 Threads</p>
                 </div>
@@ -132,7 +144,7 @@
                         <img src="assets/thumbs/intel-lunar-lake.thumb.jpg" alt="Intel Core Ultra 9 288V die shot" loading="lazy">
                     </a>
                     <h3>Intel Core Ultra 9 288V</h3>
-                    <p>Intel</p>
+                    <p class="company-intel">Intel</p>
                     <p>TSMC N3B/6 / Intel 22nm</p>
                     <p>8 Cores / 8 Threads</p>
                 </div>
@@ -142,7 +154,7 @@
                         <img src="assets/thumbs/amd-kabini-apu.thumb.jpg" alt="AMD Athlon 5350 die shot" loading="lazy">
                     </a>
                     <h3>AMD Athlon 5350</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>GlobalFoundries 28nm</p>
                     <p>2-4 Cores / 2-4 Threads</p>
                 </div>
@@ -152,7 +164,7 @@
                         <img src="assets/thumbs/amd-zen-zeppelin.thumb.jpg" alt="AMD Ryzen 7 1800X die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen 7 1800X</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>GlobalFoundries 14nm</p>
                     <p>4-8 Cores / 8-16 Threads</p>
                 </div>
@@ -162,7 +174,7 @@
                         <img src="assets/thumbs/amd-zen2-ccd.thumb.jpg" alt="AMD Ryzen 7 3800X die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen 7 3800X</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC 7nm</p>
                     <p>8 Cores / 16 Threads</p>
                 </div>
@@ -172,7 +184,7 @@
                         <img src="assets/thumbs/amd-zen3-ccd.thumb.jpg" alt="AMD Ryzen 7 5800X die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen 7 5800X</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC 7nm</p>
                     <p>8 Cores / 16 Threads</p>
                 </div>
@@ -182,7 +194,7 @@
                         <img src="assets/thumbs/amd-steamdeck.thumb.jpg" alt="Steam Deck (LCD) die shot" loading="lazy">
                     </a>
                     <h3>Steam Deck (LCD)</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC 7nm</p>
                     <p>4 Cores / 8 Threads</p>
                 </div>
@@ -192,7 +204,7 @@
                         <img src="assets/thumbs/amd-zen4-ccd.thumb.jpg" alt="AMD Ryzen 7 7700X die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen 7 7700X</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC N5</p>
                     <p>8 Cores / 16 Threads</p>
                 </div>
@@ -202,7 +214,7 @@
                         <img src="assets/thumbs/amd-zen5-ccd.thumb.jpg" alt="AMD Ryzen 7 9700X die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen 7 9700X</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC N4</p>
                     <p>8 Cores / 16 Threads</p>
                 </div>
@@ -212,9 +224,9 @@
                         <img src="assets/thumbs/amd-strix-halo.thumb.jpg" alt="AMD Ryzen AI Max+ 395 die shot" loading="lazy">
                     </a>
                     <h3>AMD Ryzen AI Max+ 395</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC N4</p>
-                    <p>6-16 Cores / 12-32 Threads</p>
+                    <p>16 Cores / 32 Threads</p>
                 </div>
 
                 <div class="cpu-card">
@@ -222,7 +234,7 @@
                         <img src="assets/thumbs/amd-zen5c-ccd.thumb.jpg" alt="AMD EPYC 9965 die shot" loading="lazy">
                     </a>
                     <h3>AMD EPYC 9965</h3>
-                    <p>AMD</p>
+                    <p class="company-amd">AMD</p>
                     <p>TSMC N3</p>
                     <p>16 Cores / 32 Threads</p>
                 </div>

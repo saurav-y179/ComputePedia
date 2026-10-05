@@ -10,7 +10,7 @@
     --font-body: "Inter", sans-serif;
 
     --text-primary: #f8fafc;
-    --text-secondary: #d7e2ee;
+    --text-secondary: #cbd5e1;
     --accent: #ffc857;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .architecture-box p {
     color: var(--text-secondary);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 26px;
     margin-bottom: 25px;
 }
@@ -226,10 +226,70 @@ body {
     font-weight: 400;
 }
 
+.company-filter-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.company-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.company-filters label {
+    padding: 9px 14px;
+    border: 1px solid #64748b;
+    border-radius: 999px;
+    color: #cbd5e1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.company-filters label:hover {
+    border-color: #94a3b8;
+    color: #ffffff;
+}
+
+.company-filter-input:focus-visible + .company-filters label[for] {
+    outline: 2px solid #cbd5e1;
+    outline-offset: 3px;
+}
+
+#x86-all:checked ~ .company-filters label[for="x86-all"],
+#x86-intel:checked ~ .company-filters label[for="x86-intel"],
+#x86-amd:checked ~ .company-filters label[for="x86-amd"],
+#arm-all:checked ~ .company-filters label[for="arm-all"],
+#arm-apple:checked ~ .company-filters label[for="arm-apple"],
+#arm-qualcomm:checked ~ .company-filters label[for="arm-qualcomm"],
+#arm-mediatek:checked ~ .company-filters label[for="arm-mediatek"],
+#arm-samsung:checked ~ .company-filters label[for="arm-samsung"],
+#arm-nvidia:checked ~ .company-filters label[for="arm-nvidia"],
+#riscv-all:checked ~ .company-filters label[for="riscv-all"],
+#riscv-spacemit:checked ~ .company-filters label[for="riscv-spacemit"] {
+    background: #cbd5e1;
+    border-color: #cbd5e1;
+    color: #0a1730;
+}
+
+#x86-intel:checked ~ .cpu-grid .cpu-card:not(:has(.company-intel)),
+#x86-amd:checked ~ .cpu-grid .cpu-card:not(:has(.company-amd)),
+#arm-apple:checked ~ .cpu-grid .cpu-card:not(:has(.company-apple)),
+#arm-qualcomm:checked ~ .cpu-grid .cpu-card:not(:has(.company-qualcomm)),
+#arm-mediatek:checked ~ .cpu-grid .cpu-card:not(:has(.company-mediatek)),
+#arm-samsung:checked ~ .cpu-grid .cpu-card:not(:has(.company-samsung)),
+#arm-nvidia:checked ~ .cpu-grid .cpu-card:not(:has(.company-nvidia)) {
+    display: none;
+}
+
 
 .cpu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
     margin-top: 35px;
     padding-bottom: 80px;
@@ -387,6 +447,14 @@ body {
     .architecture-page h2 {
         margin-top: 45px;
         line-height: 1.45;
+    }
+
+    .company-filters {
+        margin-top: 20px;
+    }
+
+    .company-filters label {
+        font-size: 13px;
     }
 
     .cpu-grid {

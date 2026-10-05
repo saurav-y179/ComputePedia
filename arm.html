@@ -40,10 +40,28 @@
                 ARM is a processor architecture known for high energy
                 efficiency and low power consumption. It is widely used
                 in smartphones, tablets, embedded devices, and modern
-                laptops and computers.
+                laptops and computers. ARM designs are licensed to many
+                companies, so Apple, Qualcomm, MediaTek, Samsung, and
+                NVIDIA can create chips suited to different devices while
+                keeping power use and heat low.
             </p>
 
             <h2>Processors</h2>
+
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-all" checked>
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-apple">
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-qualcomm">
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-mediatek">
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-samsung">
+            <input class="company-filter-input" type="radio" name="arm-company" id="arm-nvidia">
+            <div class="company-filters" aria-label="Filter ARM processors by company">
+                <label for="arm-all">All companies</label>
+                <label for="arm-apple">Apple</label>
+                <label for="arm-qualcomm">Qualcomm</label>
+                <label for="arm-mediatek">MediaTek</label>
+                <label for="arm-samsung">Samsung</label>
+                <label for="arm-nvidia">NVIDIA</label>
+            </div>
 
             <div class="cpu-grid">
 
@@ -52,7 +70,7 @@
                         <img src="assets/thumbs/apple-a10-fusion.thumb.jpg" alt="Apple A10 Fusion die shot" loading="lazy">
                     </a>
                     <h3>A10 Fusion</h3>
-                    <p>Apple</p>
+                    <p class="company-apple">Apple</p>
                     <p>TSMC 16nm</p>
                     <p>4 Cores / N/A Threads</p>
                 </div>
@@ -62,7 +80,7 @@
                         <img src="assets/thumbs/apple-a12-bionic.thumb.jpg" alt="Apple A12 Bionic die shot" loading="lazy">
                     </a>
                     <h3>A12 Bionic</h3>
-                    <p>Apple</p>
+                    <p class="company-apple">Apple</p>
                     <p>TSMC 7nm</p>
                     <p>6 Cores / N/A Threads</p>
                 </div>
@@ -72,7 +90,7 @@
                         <img src="assets/thumbs/apple-a14-bionic.thumb.jpg" alt="Apple A14 Bionic die shot" loading="lazy">
                     </a>
                     <h3>A14 Bionic</h3>
-                    <p>Apple</p>
+                    <p class="company-apple">Apple</p>
                     <p>TSMC N5</p>
                     <p>6 Cores / N/A Threads</p>
                 </div>
@@ -82,7 +100,7 @@
                         <img src="assets/thumbs/apple-m1.thumb.jpg" alt="Apple M1 die shot" loading="lazy">
                     </a>
                     <h3>M1</h3>
-                    <p>Apple</p>
+                    <p class="company-apple">Apple</p>
                     <p>TSMC N5</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -92,7 +110,7 @@
                         <img src="assets/thumbs/apple-m4.thumb.jpg" alt="Apple M4 die shot" loading="lazy">
                     </a>
                     <h3>M4</h3>
-                    <p>Apple</p>
+                    <p class="company-apple">Apple</p>
                     <p>TSMC N3E</p>
                     <p>10 Cores / N/A Threads</p>
                 </div>
@@ -102,7 +120,7 @@
                         <img src="assets/thumbs/qualcomm-snapdragon-820.thumb.jpg" alt="Snapdragon 820 die shot" loading="lazy">
                     </a>
                     <h3>Snapdragon 820</h3>
-                    <p>Qualcomm</p>
+                    <p class="company-qualcomm">Qualcomm</p>
                     <p>Samsung 14nm</p>
                     <p>4 Cores / N/A Threads</p>
                 </div>
@@ -112,7 +130,7 @@
                         <img src="assets/thumbs/qualcomm-snapdragon-855.thumb.jpg" alt="Snapdragon 855 die shot" loading="lazy">
                     </a>
                     <h3>Snapdragon 855</h3>
-                    <p>Qualcomm</p>
+                    <p class="company-qualcomm">Qualcomm</p>
                     <p>TSMC 7nm</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -122,7 +140,7 @@
                         <img src="assets/thumbs/qualcomm-snapdragon-888.thumb.jpg" alt="Snapdragon 888 die shot" loading="lazy">
                     </a>
                     <h3>Snapdragon 888</h3>
-                    <p>Qualcomm</p>
+                    <p class="company-qualcomm">Qualcomm</p>
                     <p>Samsung 5nm</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -132,7 +150,7 @@
                         <img src="assets/thumbs/qualcomm-snapdragon-8-gen2.thumb.jpg" alt="Snapdragon 8 Gen2 die shot" loading="lazy">
                     </a>
                     <h3>Snapdragon 8 Gen2</h3>
-                    <p>Qualcomm</p>
+                    <p class="company-qualcomm">Qualcomm</p>
                     <p>TSMC N4</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -142,7 +160,7 @@
                         <img src="assets/thumbs/qualcomm-snapdragon-8-elite-gen6.thumb.jpg" alt="Snapdragon 8 Elite Extreme Gen6 die shot" loading="lazy">
                     </a>
                     <h3>Snapdragon 8 Elite Extreme Gen6</h3>
-                    <p>Qualcomm</p>
+                    <p class="company-qualcomm">Qualcomm</p>
                     <p>TSMC N2P GAA</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -152,7 +170,7 @@
                         <img src="assets/thumbs/mediatek-helio-g95.thumb.jpg" alt="MediaTek Helio G95 die shot" loading="lazy">
                     </a>
                     <h3>Helio G95</h3>
-                    <p>MediaTek</p>
+                    <p class="company-mediatek">MediaTek</p>
                     <p>TSMC 12nm</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -162,7 +180,7 @@
                         <img src="assets/thumbs/mediatek-dimensity-8100.thumb.jpg" alt="MediaTek Dimensity 8100/8200 die shot" loading="lazy">
                     </a>
                     <h3>Dimensity 8100/8200</h3>
-                    <p>MediaTek</p>
+                    <p class="company-mediatek">MediaTek</p>
                     <p>TSMC N5</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -172,7 +190,7 @@
                         <img src="assets/thumbs/mediatek-dimensity-9400.thumb.jpg" alt="MediaTek Dimensity 9400 die shot" loading="lazy">
                     </a>
                     <h3>Dimensity 9400</h3>
-                    <p>MediaTek</p>
+                    <p class="company-mediatek">MediaTek</p>
                     <p>TSMC N3E</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -182,7 +200,7 @@
                         <img src="assets/thumbs/mediatek-dimensity-9600-pro.thumb.jpg" alt="MediaTek Dimensity 9600 Pro die shot" loading="lazy">
                     </a>
                     <h3>Dimensity 9600 Pro</h3>
-                    <p>MediaTek</p>
+                    <p class="company-mediatek">MediaTek</p>
                     <p>TSMC N2P GAA</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -192,7 +210,7 @@
                         <img src="assets/thumbs/samsung-exynos-990.thumb.jpg" alt="Samsung Exynos 990 die shot" loading="lazy">
                     </a>
                     <h3>Exynos 990</h3>
-                    <p>Samsung</p>
+                    <p class="company-samsung">Samsung</p>
                     <p>Samsung 7nm</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
@@ -202,7 +220,7 @@
                         <img src="assets/thumbs/samsung-exynos-2400.thumb.jpg" alt="Samsung Exynos 2400 die shot" loading="lazy">
                     </a>
                     <h3>Exynos 2400</h3>
-                    <p>Samsung</p>
+                    <p class="company-samsung">Samsung</p>
                     <p>Samsung 4nm LPP+</p>
                     <p>10 Cores / N/A Threads</p>
                 </div>
@@ -212,7 +230,7 @@
                         <img src="assets/thumbs/samsung-exynos-2600.thumb.jpg" alt="Samsung Exynos 2600 die shot" loading="lazy">
                     </a>
                     <h3>Exynos 2600</h3>
-                    <p>Samsung</p>
+                    <p class="company-samsung">Samsung</p>
                     <p>Samsung 2nm GAA</p>
                     <p>10 Cores / N/A Threads</p>
                 </div>
@@ -222,7 +240,7 @@
                         <img src="assets/thumbs/nvidia-gb10-blackwell.thumb.jpg" alt="NVIDIA GB10 Superchip die shot" loading="lazy">
                     </a>
                     <h3>NVIDIA GB10 Superchip</h3>
-                    <p>NVIDIA</p>
+                    <p class="company-nvidia">NVIDIA</p>
                     <p>TSMC N3</p>
                     <p>20 Cores / 20 Threads</p>
                 </div>

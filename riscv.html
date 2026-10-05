@@ -40,10 +40,20 @@
                 RISC-V is an open instruction set architecture that can
                 be freely implemented and customized. It is used in
                 embedded systems, research, education, and increasingly
-                in commercial processors.
+                in commercial processors. Its modular design lets chip
+                makers choose the features they need, making it useful for
+                everything from small controllers to experimental laptops
+                and high-performance computing projects.
             </p>
 
             <h2>Processors</h2>
+
+            <input class="company-filter-input" type="radio" name="riscv-company" id="riscv-all" checked>
+            <input class="company-filter-input" type="radio" name="riscv-company" id="riscv-spacemit">
+            <div class="company-filters" aria-label="Filter RISC-V processors by company">
+                <label for="riscv-all">All companies</label>
+                <label for="riscv-spacemit">Spacemit</label>
+            </div>
 
             <div class="cpu-grid">
 
@@ -52,7 +62,7 @@
                         <img src="assets/thumbs/riscv-spacemit-k1.thumb.jpg" alt="Spacemit K1 die shot" loading="lazy">
                     </a>
                     <h3>Spacemit K1</h3>
-                    <p>Spacemit</p>
+                    <p class="company-spacemit">Spacemit</p>
                     <p>TSMC 22nm</p>
                     <p>8 Cores / N/A Threads</p>
                 </div>
